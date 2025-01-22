@@ -41,7 +41,7 @@ pairwise_combinations <- expand.grid(
 )
 
 # Step 4: Remove rows with NA in the combinations (optional)
-pairwise_combinations <- pairwise_combinations_2 %>%
+pairwise_combinations <- pairwise_combinations %>%
   filter(!is.na(name_source2))
 
 # Step 5: Calculate similarities
